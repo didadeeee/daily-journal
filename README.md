@@ -1,10 +1,10 @@
-Hello! I am creating a passion project, 'Daily Journal', coding along with [JavaScript Master](https://www.youtube.com/watch?v=F627pKNUCVQ).
+Hello! I am learning to create a React App, 'GPT3', coding along with [JavaScript Master](https://www.youtube.com/watch?v=F627pKNUCVQ).
 
-Getting Started:
+## Getting Started:
 * create a git repository on github
 * connect the local environment using git desktop
 * in the terminal - type npx create-react-app ./
-* update gitignore with https://www.toptal.com/developers/gitignore/
+* update gitignore with [Toptal](https://www.toptal.com/developers/gitignore/)
 * remove src folder and create a new src folder
 * create index.js, insert code below - 
 ```
@@ -34,84 +34,79 @@ function App(props) {
 
 export default App;
 ```
-
-* npm start to start your server
-* start creating components folder
-
 **TIPS** *git push whenever (git add -A, git status, git commit -m 'initial environment', git push)*
 
+* npm start to start your server
+* start creating components & containers folder
+* create index.js in the components/containers folder, insert code below - 
+```
+export { default as Blog } from './blog/Blog';
+export { default as Features } from './features/Features';
+export { default as Footer } from './footer/Footer';
+export { default as Header } from './header/Header';
+export { default as Possibility } from './possibility/Possibility';
+export { default as WhatGPT3 } from './whatGPT3/WhatGPT3';
+```
 
-Resources:
+* insert initial styling in App.css
+```
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+     background: var(--color-bg);
+}
+
+and more..
+```
+* insert initial styling in index.css
+```
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Manrope', sans-serif;
+
+  --gradient-text: linear-gradient(89.97deg, #AE67FA 1.84%, #F49867 102.67%);
+  --gradient-bar: linear-gradient(103.22deg, #AE67FA -13.86%, #F49867 99.55%);
+  
+  --color-bg: #040C18;
+  --color-footer : #031B34;
+  --color-blog: #042c54;
+  --color-text: #81AFDD;
+  --color-subtext: #FF8A71;
+}
+```
+* media query, 700px for middle size device
+```
+@media screen and (max-width: 700px) {
+    .section__padding {
+      padding: 4rem;
+    }
+  
+    .section__margin {
+      margin: 4rem;
+    }
+  }
+```
+* media query, 550px for middle size device
+```
+  @media screen and (max-width: 550px) {
+    .section__padding {
+      padding: 4rem 2rem;
+    }
+  
+    .section__margin {
+      margin: 4rem 2rem;
+    }  
+  }
+```
+
+
+## Resources:
 Markdown Cheatsheet: [Moodle](https://docs.moodle.org/402/en/Markdown#:~:text=Bullet%20point%20lists%20can%20be,and%20should%20not%20be%20forgotten.)
-
-
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Gradient Generator: [Angry Tools](https://angrytools.com/gradient/), [Online Tutorial - 30.54 onwards](https://www.youtube.com/watch?v=F627pKNUCVQ)
+CSS Animation: [Animista](https://animista.net/)

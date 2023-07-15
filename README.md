@@ -1,5 +1,10 @@
 Hello! I am learning to create a React App, 'GPT3', coding along with [JavaScript Master](https://www.youtube.com/watch?v=F627pKNUCVQ).
 
+## Key Learnings: 
+- learning the practical ways of setting up react app
+- practice on my css skills
+- get familiarise on the file organization
+
 ## Getting Started:
 
 - create a git repository on github
@@ -121,5 +126,7 @@ and more..
 
 Markdown Cheatsheet: [Moodle](https://docs.moodle.org/402/en/Markdown#:~:text=Bullet%20point%20lists%20can%20be,and%20should%20not%20be%20forgotten.)<br>
 Gradient Generator: [Angry Tools](https://angrytools.com/gradient/), [Online Tutorial](https://www.youtube.com/watch?v=F627pKNUCVQ) (30:54 onwards) <br>
-CSS Animation: [Animista](https://animista.net/)
-CSS BEM Naming: [CSS Wizardry](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
+CSS Animation: [Animista](https://animista.net/)<br>
+CSS BEM Naming: [CSS Wizardry](https://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)<br>
+CSS Flexbox Tutorial: [Sharkcoder](https://sharkcoder.com/layout/flexbox)<br>
+Responsive and Optimised Image: [Sharkcoder](https://sharkcoder.com/images/responsive-images)<br>
